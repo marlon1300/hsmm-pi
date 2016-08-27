@@ -55,7 +55,7 @@ sudo chmod g+w /etc/resolv.conf
 
 # Checkout the HSMM-Pi project
 if [ ! -e ${PROJECT_HOME} ]; then
-    git clone https://github.com/urlgrey/hsmm-pi.git
+    git clone https://github.com/marlon1300/hsmm-pi.git
 else
     cd ${PROJECT_HOME}
     git pull
