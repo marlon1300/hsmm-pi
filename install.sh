@@ -138,7 +138,9 @@ sudo service apache2 restart
 
 # Download and build olsrd
 cd /var/tmp
-git clone --branch v0.6.8.1 --depth 1 https://github.com/OLSR/olsrd.git
+if [ ! -d "$DIRECTORY" ]; then
+  git clone --branch v0.9.0.3 https://github.com/OLSR/olsrd.git
+fi
 cd olsrd
 
 # patch the Makefile configuration to produce position-independent code (PIC)
