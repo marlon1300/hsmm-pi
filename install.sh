@@ -37,6 +37,16 @@ sudo apt-get install -y \
     libnet-gpsd3-perl \
     ntp
 
+# Upgrade to php 5.4
+
+sudo apt-get update
+sudo apt-get install python-software-properties
+sudo apt-get update
+sudo add-apt-repository ppa:ondrej/php5-oldstable
+sudo apt-get update
+apt-cache policy php5
+sudo apt-get install php5
+
 # Remove ifplugd if present, as it interferes with olsrd
 sudo apt-get remove -y ifplugd
 
