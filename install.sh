@@ -148,7 +148,7 @@ sudo service apache2 restart
 
 # Download and build olsrd
 cd /var/tmp
-if [ ! -d "$DIRECTORY" ]; then
+if [ ! -d "/var/tmp/olsrd" ]; then
   git clone --branch release-0.9.0 https://github.com/OLSR/olsrd.git
 fi
 cd olsrd
